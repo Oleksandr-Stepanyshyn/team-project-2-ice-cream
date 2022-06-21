@@ -196,16 +196,19 @@ a {
   font-size: 8px;
   line-height: 1.5;
 
-  max-width: 115px;
+  max-width: 200px;
+  max-height: 110px;
 
   color: $fourth-text-color;
+  overflow: auto;
 
   @media screen and (min-width: 768px) {
     display: block;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 200px;
+    max-width: 300px; 
+    max-height: 180px;
 
     font-size: 14px;
     line-height: 140%;
@@ -271,7 +274,7 @@ a {
     left: 490px;
     bottom: -290px;
 
-    z-index: 1;
+    // z-index: 1;
   }
 
   &::after {
